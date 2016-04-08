@@ -2,16 +2,78 @@
 <html>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
-			<style>
-				body {
-				font-family: 'Nunito', sans-serif;
-				}
-				h1 {
+		<style>
+			body {
+			font-family: 'Nunito', sans-serif;
+			}
+			h1 {
+			text-align: center;
+			}
+			button {
+				background-color: #00ffff
+				margin: 0 10px;
+				
+			}
+			
+			.header {
 				text-align: center;
-				}
-</style>
+				margin: auto;
+			}
+			.container {
+			width: 500px;
+			height: 500px;
+			border: 5px solid black;
+			float:left;
+			margin:100;
+			}
+			
+			.table {
+		display: table;
+	 	width: 100%; 
+	 	background: #fff;
+	 	margin: 0;
+	 	box-sizing: border-box;
+
+	 }
+		</style>
 		<title>Music Lending Library</title>
 	 </head>
- <body>
-  </body>
+	<body>
+		<div class="header">
+			<button type="button">Update Account</button>&nbsp;&nbsp;
+			<button type="button">My Instruments</button>&nbsp;&nbsp;
+			<button type="button">Log out</button>
+		</div>
+		<h1>Search</h1>
+		<div>
+		<h2>Search by:</h2> <select name="thing">...</select><button type="button">Go!</button>
+		</div>
+		<br />
+		<table>
+		<tr>
+		<td>Instrument</td>
+		<td>School</td>
+		<td>Condition</td>
+		</tr>
+		<tr>
+		<td>Saxaphone</td>
+		<td>Baxter</td>
+		<td>Trashed</td>
+		</tr>
+		<td>Oboe</td>
+		<td>Baxter</td>
+		<td>Crumbled into dust</td>
+		</tr>
+		</table>
+		<br />
+		<spanid="supercontainer">
+		<div class="container">
+		test
+		</div>
+		<div class="container">
+		test
+		</div>
+		</span>
+		
+	</body>
  </html>
