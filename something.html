@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
-<style>
-body {
-font-family: 'Nunito', sans-serif;
-}
-table {
-    width:70%;
-	float: left;
-}
-table, th, td {
-    border: 1px white;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-table#t01 tr:nth-child(even) {
-    background-color: #eee;
-}
-table#t01 tr:nth-child(odd) {
-   background-color:#fff;
-}
-table#t01 th	{
-    background-color: black;
-    color: white;
-	border: 1px solid black;
-}
-#c2 {
-				 border-left:1px solid gray;
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				font-family: 'Nunito', sans-serif;
+			}
+			
+			/* TEXT STYLES */
+			a {
+				color:gray;
+				text-decoration: none;
+				padding: 20px;
+			}
+			a:hover {
+				color: black;
+			}
+			a:hover {
+				color:blue
+			}
+			
+			
+			
+			/* SIDEBAR */
+			.sidebar {
+				 border-right: 1px solid #ccc;
 				 width: 20%;
 				 margin-left: 20px;
+				 margin-top: 35px;
+				 float: left;
+				 text-align: right;
+				 padding: 5px 0;
 			}
-a {
-color:gray;
-text-decoration: none;
-padding: 20px;
-}
-a:hover {
-color: black;
-}
-a:hover {
-color:blue
-}
-</style>
-</head>
-<body>
-<div class="container"><h1>My Instruments</h1></div>
-	</div>
+			
+			
+			/* MAIN TABLE */
+			.mainContent {
+				float: left;
+				padding-left: 30px;
+			}
+			.mainContent h1 {
+				margin-bottom: 10px
+			}
+			table {
+				font-weight: normal;
+			}
+			table, th, td {
+				border: 1px white;
+				border-collapse: collapse;
+			}
+			th, td {
+				padding: 5px 15px;
+				text-align: left;
+			}
+			table#t01 tr:nth-child(even) {
+				background-color: #eee;
+			}
+			table#t01 tr:nth-child(odd) {
+			   background-color:#fff;
+			}
+			table#t01 th	{
+				background-color: black;
+				color: white;
+				border: 1px solid black;
+			}
+			
+		</style>
+	</head>
+	<body>
 	
-	<div id="c2">
-		<a href="www.placeholder.com">Browse</a>
-				</br>
-		<a href="www.placeholder.com">Home</a>
-				</br>
-		<a href="www.placeholder.com">Log Out</a>
-				</br>
-    </div>
-
-	<table border="1" style="width:80%">
-		<tr>
-
-<table id="t01">
-  <tr>
-    <th>My Instruments</th>
-    <th>Instrument Condition</th>		
-  </tr>
-  <tr>
-    <td title="You saved $1000!"><a href="test">Tuba</a></td>
-    <td><a href="test">Bad</a></td>		
-  </tr>
-  <tr>
-    <td title="You saved $67!"><a href="test">Violin</a></td>
-    <td><a href="test">Good</a></td>		
-    </tr>
-  <tr>
-    <td title="You saved $165!"><a href="test">Drum</a></td>
-    <td><a href="test">OK</a></td>		
-  </tr>
-</table>
+		<div class="sidebar">
+			<a href="www.placeholder.com">Browse</a>
+			</br>
+			<a href="www.placeholder.com">Home</a>
+			</br>
+			<a href="www.placeholder.com">Log Out</a>
+			</br>
+		</div>
 	
-</body>
+		<div class="mainContent">
+			<h1>My Instruments</h1>
+			<table id="t01">
+				<tr>
+					<th>My Instruments</th>
+					<th>Instrument Condition</th>		
+				</tr>
+				<tr>
+					<td title="You saved $1000!"><a href="test">Tuba</a></td>
+					<td><a href="test">Bad</a></td>		
+				</tr>
+				<tr>
+					<td title="You saved $67!"><a href="test">Violin</a></td>
+					<td><a href="test">Good</a></td>		
+				</tr>
+				<tr>
+					<td title="You saved $165!"><a href="test">Drum</a></td>
+					<td><a href="test">OK</a></td>		
+				</tr>
+			</table>
+		</div>
+
+
+	</body>
 </html>
