@@ -19,24 +19,25 @@
 			a:hover {
 				color:blue
 			}
-			
+			h1 {
+			padding-left: 20px;
+			}
 			
 			
 			/* SIDEBAR */
 			.sidebar {
 				 border-right: 1px solid #ccc;
-				 width: 20%;
-				 margin-left: 20px;
+				 width: 10%;
+				 margin-right: 20px;
+				 margin-left: 0px;
 				 margin-top: 35px;
 				 float: left;
-				 text-align: right;
 				 padding: 5px 0;
 			}
 			
 			
 			/* MAIN TABLE */
 			.mainContent {
-				float: left;
 				padding-left: 30px;
 			}
 			.mainContent h1 {
@@ -44,6 +45,9 @@
 			}
 			table {
 				font-weight: normal;
+		        width: 85%;
+				float: left;
+
 			}
 			table, th, td {
 				border: 1px white;
@@ -63,13 +67,18 @@
 				background-color: black;
 				color: white;
 				border: 1px solid black;
+				
 			}
 			
 		</style>
 	</head>
 	<body>
 	
-		<div class="sidebar">
+		
+	
+		<div class="mainContent">
+			<h1>My Instruments</h1>
+			<div class="sidebar">
 			<a href="www.placeholder.com">Browse</a>
 			</br>
 			<a href="www.placeholder.com">Home</a>
@@ -77,9 +86,6 @@
 			<a href="www.placeholder.com">Log Out</a>
 			</br>
 		</div>
-	
-		<div class="mainContent">
-			<h1>My Instruments</h1>
 			<table id="t01">
 				<tr>
 					<th>My Instruments</th>
