@@ -122,3 +122,13 @@ fieldset {
 			margin-top: 20px;
 
 			}
+			
+			#af {
+				width: 40%
+				float: left;
+			}
+			#bf {
+				width: 40%
+				float: left;
+				color: #000000
+			}
