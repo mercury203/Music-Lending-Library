@@ -1,47 +1,32 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<style>
-			body, html {
-				margin: 30;
-				padding: 0
-			}
-		
-			.container {
-				background: #ffffff;
-				font-family: sans-serif;
-			}
-			
-			.footerMenu {
-				background:grey;
-			}
-			
-			.footerMenuInner {
-				width: px;
-				margin: px auto;
-				background: ;
-			}
-			
-			.column {
-				float: left;
-				margin: px;
-				width: px;
-			}
-			
-			h3 {
-				color: ;
-				font-family: sans-se1rif;
-			}
-			
-			
-			.column a {
-				color: ;
-				font-family: sans-serif;
-				display: block;
-			}
-		</style>
-	</head>
+<head>
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th	{
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
 <body>
-	<div class="container"><h1>My Instruments</h1></div>
+<div class="container"><h1>My Instruments</h1></div>
 	</div>`
 	
 	<table style="width:70%">
@@ -53,20 +38,25 @@
 
 	<table border="1" style="width:80%">
 		<tr>
-			<td><h3>Your Instruments</h3></td>
-			<td><h3>Instrument Condition</h3></td> 
-		</tr>
-		
-		<tr>
-			<td>Instrument 1</td> 
-			<td>Condition</td>
-		</tr>
-		
-		<tr>
-    		<td>Instrument 2</td> 
-			<td>Condition</td>
-		</tr>
-	</table>
+
+<table id="t01">
+  <tr>
+    <th>Your Instruments</th>
+    <th>Instrument Condition</th>		
+  </tr>
+  <tr>
+    <td>Instrument 1</td>
+    <td>Condition</td>		
+  </tr>
+  <tr>
+    <td>Instrument 2</td>
+    <td>Condition</td>		
+    </tr>
+  <tr>
+    <td>Instrument 3</td>
+    <td>Condition</td>		
+  </tr>
+</table>
 
 </body>
 </html>
