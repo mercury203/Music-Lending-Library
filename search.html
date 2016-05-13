@@ -22,7 +22,6 @@
 				font-weight: normal;
 		        width: 85%;
 				float: left;
-
 			}
 			table, th, td {
 				border: 1px white;
@@ -43,6 +42,17 @@
 				color: white;
 				border: 1px solid black;
 				
+			}
+			#containera {
+			width: 35%;
+			height: 250px;
+			float: left;
+			border: 1px solid black;
+			}
+			#containerb {
+			width: 35%;
+			height: 250px;
+			float: left;
 			}
 		</style>
 		<title>Music Lending Library</title>
@@ -69,9 +79,9 @@
 		<br />
 		<table id="t01">
 			<tr>
-				<td>Instrument</td>
-				<td>School</td>
-				<td>Condition</td>
+				<th>Instrument</th>
+				<th>School</th>
+				<th>Condition</th>
 			</tr>
 			<tr>
 				<td>Saxaphone</td>
@@ -84,14 +94,22 @@
 			</tr>
 		</table>
 		<br />
-		<span id="supercontainer">
-			<div class="container">
+			<div class="containera" style="
+			width: 35%;
+			height: 250px;
+			float: left;
+			border: 1px solid black; 
+			margin-right:50px;
+			margin-bottom:50px;
+			margin-top:50px;">
 				test
 			</div>
-			<div class="container">
+			<div class="containerb" style="width: 35%;
+			height: 250px;
+			float: left;
+			border: 1px solid black; margin:50px;">
 				test
 			</div>
-		</span>
 		
 	</body>
  </html>
