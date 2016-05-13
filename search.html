@@ -9,46 +9,88 @@
 				margin: 0 10px;
 				
 			}
-			
-			
+			#column2 {
+				text-align:left;
+				float:right;
+				 margin:30;
+				 width:20%;
+				 font-family: 'Nunito', sans-serif;
+				 padding:0;
+				 border-left:1px solid gray;
+			}
+			table {
+				font-weight: normal;
+		        width: 85%;
+				float: left;
+
+			}
+			table, th, td {
+				border: 1px white;
+				border-collapse: collapse;
+			}
+			th, td {
+				padding: 5px 15px;
+				text-align: left;
+			}
+			table#t01 tr:nth-child(even) {
+				background-color: #eee;
+			}
+			table#t01 tr:nth-child(odd) {
+			   background-color:#fff;
+			}
+			table#t01 th	{
+				background-color: black;
+				color: white;
+				border: 1px solid black;
+				
+			}
 		</style>
 		<title>Music Lending Library</title>
 	 </head>
 	<body>
-		<div class="header">
-			<button type="button">Update Account</button>&nbsp;&nbsp;
-			<button type="button">My Instruments</button>&nbsp;&nbsp;
-			<button type="button">Log out</button>
-		</div>
 		<h1>Search</h1>
+		<div id="column2">
+				<a href="www.placeholder.com">My instruments</a>
+				<br />
+				<a href="www.placeholder.com">Sign Up</a>
+				<br />
+				<a href="www.placeholder.com">Browse</a>
+				</b>
+			</div>
 		<div>
-		<h2>Search by:</h2> <select name="thing">...</select><button type="button">Go!</button>
+			<h2>Search by:</h2> 
+			<select name="thing">
+				<option value="inst">Instrument</option>
+				<option value="loca">Location</option>
+				<option value="cond">Condition</option>
+			</select>
+			<button type="button">Go!</button>
 		</div>
 		<br />
-		<table>
-		<tr>
-		<td>Instrument</td>
-		<td>School</td>
-		<td>Condition</td>
-		</tr>
-		<tr>
-		<td>Saxaphone</td>
-		<td>Baxter</td>
-		<td>Trashed</td>
-		</tr>
-		<td>Oboe</td>
-		<td>Baxter</td>
-		<td>Crumbled into dust</td>
-		</tr>
+		<table id="t01">
+			<tr>
+				<td>Instrument</td>
+				<td>School</td>
+				<td>Condition</td>
+			</tr>
+			<tr>
+				<td>Saxaphone</td>
+				<td>Baxter</td>
+				<td>Trashed</td>
+			</tr>
+				<td>Oboe</td>
+				<td>Baxter</td>
+				<td>Crumbled into dust</td>
+			</tr>
 		</table>
 		<br />
-		<spanid="supercontainer">
-		<div class="container">
-		test
-		</div>
-		<div class="container">
-		test
-		</div>
+		<span id="supercontainer">
+			<div class="container">
+				test
+			</div>
+			<div class="container">
+				test
+			</div>
 		</span>
 		
 	</body>
