@@ -11,16 +11,7 @@
 					color: white;
 					border: 1px solid black;
 			}
-			
-			#column2 {
-				text-align:left;
-				float:right;
-				 padding:10px;
-				 width:20%;
-				 font-family: 'Nunito', sans-serif;
-				 border-left:1px solid gray;
-				 margin: 10px;
-			}
+			{Table styles}
 			table {
 				font-weight: normal;
 		        width: 89%;
@@ -45,6 +36,7 @@
 				color: white;
 				border: 1px solid black;
 				
+				{Info styles}
 			}
 			#containera {
 			width: 40%;
@@ -57,19 +49,43 @@
 			height: 250px;
 			float: left;
 			}
+			{Navbar styles}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fff;
+	color: #000;
+}
 		</style>
 		<title>Music Lending Library</title>
 	 </head>
 	<body>
+	<ul>
+		<li><a href="hello">Home</a></li>
+		<li><a href="hello">Edit Account</a></li>
+		<li><a href="hello">My Instruments</a></li>
+		</ul>
 		<h1>Search</h1>
-		<div id="column2">
-				<a href="www.placeholder.com" style="color:#888888;">My instruments</a>
-				<br />
-				<a href="www.placeholder.com" style="color:#888888;">Sign Up</a>
-				<br />
-				<a href="www.placeholder.com" style="color:#888888;">Browse</a>
-				</b>
-			</div>
+		
+		
 		<div class="searchby">
 			<h2 style="display:inline;">Search by:</h2> 
 			<select name="thing">
