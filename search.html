@@ -35,7 +35,9 @@
 				background-color: black;
 				color: white;
 				border: 1px solid black;
-				
+			td:hover {
+				color: blue;
+			}
 				{Info styles}
 			}
 			#containera {
@@ -49,8 +51,10 @@
 			height: 250px;
 			float: left;
 			}
+			
 			{Navbar styles}
-	ul {
+			
+		ul.top {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,11 +62,11 @@
     background-color: #000;
 }
 
-li {
+li.top {
     float: left;
 }
 
-li a {
+li.top a {
     display: block;
     color: white;
     text-align: center;
@@ -70,21 +74,21 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li.top a:hover {
     background-color: #fff;
 	color: #000;
 }
+
 		</style>
 		<title>Music Lending Library</title>
 	 </head>
 	<body>
-	<ul>
-		<li><a href="hello">Home</a></li>
-		<li><a href="hello">Edit Account</a></li>
-		<li><a href="hello">My Instruments</a></li>
-		</ul>
+	<ul class="top">
+		<li class="top"><a href="hello">Home</a></li>
+		<li class="top"><a href="hello">Edit Account</a></li>
+		<li class="top"><a href="hello">My Instruments</a></li>
+	</ul>
 		<h1>Search</h1>
-		
 		
 		<div class="searchby">
 			<h2 style="display:inline;">Search by:</h2> 
@@ -116,23 +120,23 @@ li a:hover {
 				<th>Condition</th>
 			</tr>
 			<tr>
-				<td>Saxaphone</td>
-				<td>Baxter</td>
-				<td>Poor</td>
+				<td class="hover">Saxaphone</td>
+				<td class="hover">Baxter</td>
+				<td class="hover">Poor</td>
 			</tr>
-				<td>Oboe</td>
-				<td>HCA</td>
-				<td>OK</td>
-			</tr>
-			</tr>
-				<td>Drum</td>
-				<td>MSAD 75</td>
-				<td>Good</td>
+				<td class="hover">Oboe</td>
+				<td class="hover">HCA</td>
+				<td class="hover">OK</td>
 			</tr>
 			</tr>
-				<td>Guitar</td>
-				<td>RSU 23</td>
-				<td>Bad</td>
+				<td class="hover">Drum</td>
+				<td class="hover">MSAD 75</td>
+				<td class="hover">Good</td>
+			</tr>
+			</tr>
+				<td class="hover">Guitar</td>
+				<td class="hover">RSU 23</td>
+				<td class="hover">Bad</td>
 			</tr>
 		</table>
 		<br />
@@ -173,3 +177,6 @@ li a:hover {
 		
 	</body>
  </html>
+ <!---
+ 
+ --->
