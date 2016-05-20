@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/static/jquery-2.2.3.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#button").click(function() {
+					var destination = $("#destination").val();
+					var content = $("#content").val();
+					$.ajax(destination, {
+						data: content,
+						contentType: "application/json",
+						type: "POST"
+					}).always(function(data) {
+						$("#output").text(data);
+						//alert(data);
+					});
+				});
+			});
+		</script>
+		<style>
+			textarea, input[type="text"] {
+				width: 900px;
+				margin-bottom: 5px;
+			}
+			textarea {
+				height: 200px;
+			}
+			#button {
+				width: 900px;
+				text-align: center;
+				-moz-user-select: none;
+				cursor: pointer;
+			}
+			#output {
+				width: 900px;
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" id="destination"/><br/>
+		<textarea id="content"></textarea>
+		<div id="button">Submit</div>
+		<pre id="output">Output</pre>
+	</body>
+</html>
