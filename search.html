@@ -1,55 +1,182 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
 		<link href='style.css' rel='stylesheet' type='text/css'>
 		<style>
 			button {
-				background-color: #00ffff
-				margin: 0 10px;
-				
+					display: inline;
+					margin-top: 10px;
+					background-color: #888888;
+					color: white;
+					border: 1px solid black;
+			}
+			{Table styles}
+			table {
+				font-weight: normal;
+		        width: 89%;
+				float: left;
+				border: 1px solid black;
+			}
+			table, th, td {
+				border-collapse: collapse;
+			}
+			th, td {
+				padding: 5px 15px;
+				text-align: left;
+			}
+			table#t01 tr:nth-child(even) {
+				background-color: #eee;
+			}
+			table#t01 tr:nth-child(odd) {
+			   background-color:#fff;
+			}
+			table#t01 th	{
+				background-color: black;
+				color: white;
+				border: 1px solid black;
+			td:hover {
+				color: blue;
+			}
+				{Info styles}
+			}
+			#containera {
+			width: 40%;
+			height: 250px;
+			float: left;
+			border: 1px solid black;
+			}
+			#containerb {
+			width: 40%;
+			height: 250px;
+			float: left;
 			}
 			
+			{Navbar styles}
 			
+		ul.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+li.top {
+    float: left;
+}
+
+li.top a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.top a:hover {
+    background-color: #fff;
+	color: #000;
+}
+
 		</style>
 		<title>Music Lending Library</title>
 	 </head>
 	<body>
-		<div class="header">
-			<button type="button">Update Account</button>&nbsp;&nbsp;
-			<button type="button">My Instruments</button>&nbsp;&nbsp;
-			<button type="button">Log out</button>
-		</div>
+	<ul class="top">
+		<li class="top"><a href="hello">Home</a></li>
+		<li class="top"><a href="hello">Edit Account</a></li>
+		<li class="top"><a href="hello">My Instruments</a></li>
+	</ul>
 		<h1>Search</h1>
-		<div>
-		<h2>Search by:</h2> <select name="thing">...</select><button type="button">Go!</button>
+		
+		<div class="searchby">
+			<h2 style="display:inline;">Search by:</h2> 
+			<select name="thing">
+				<option value="inst">Instrument</option>
+				<option value="inst">Saxaphone</option>
+				<option value="inst">Oboe</option>
+				<option value="inst">Drum</option>
+			</select>
+			<select name="thing">
+				<option value="inst">School</option>
+				<option value="inst">Baxter</option>
+				<option value="inst">RSU 13</option>
+				<option value="inst">MSAD 75</option>
+			</select>
+			<select name="thing">
+				<option value="inst">Condition</option>
+				<option value="inst">Bad</option>
+				<option value="inst">Good</option>
+				<option value="inst">Great</option>
+			</select>
+			<button type="button">Go!</button>
 		</div>
 		<br />
-		<table>
-		<tr>
-		<td>Instrument</td>
-		<td>School</td>
-		<td>Condition</td>
-		</tr>
-		<tr>
-		<td>Saxaphone</td>
-		<td>Baxter</td>
-		<td>Trashed</td>
-		</tr>
-		<td>Oboe</td>
-		<td>Baxter</td>
-		<td>Crumbled into dust</td>
-		</tr>
+		<table id="t01">
+			<tr>
+				<th>Instrument</th>
+				<th>School</th>
+				<th>Condition</th>
+			</tr>
+			<tr>
+				<td class="hover">Saxaphone</td>
+				<td class="hover">Baxter</td>
+				<td class="hover">Poor</td>
+			</tr>
+				<td class="hover">Oboe</td>
+				<td class="hover">HCA</td>
+				<td class="hover">OK</td>
+			</tr>
+			</tr>
+				<td class="hover">Drum</td>
+				<td class="hover">MSAD 75</td>
+				<td class="hover">Good</td>
+			</tr>
+			</tr>
+				<td class="hover">Guitar</td>
+				<td class="hover">RSU 23</td>
+				<td class="hover">Bad</td>
+			</tr>
 		</table>
 		<br />
-		<spanid="supercontainer">
-		<div class="container">
-		test
-		</div>
-		<div class="container">
-		test
-		</div>
-		</span>
+			<div class="containera" style="
+			width: 40%;
+			height: 250px;
+			float: left;
+			border: 1px solid black; 
+			margin-right:50px;
+			margin-bottom:50px;
+			margin-top:50px;
+			padding: 5px;
+			">
+			
+				<h2>Instrument Info</h2>
+				<p>Instrument: Saxaphone</p>
+				<p>Condition: Trashed</p>
+				<p>Location: Baxter</p>
+				<p>Notes: None</p>
+			
+			</div>
+			<div class="containerb" style="width: 40%;
+			height: 250px;
+			float: left;
+			border: 1px solid black; 
+			margin:50px;
+			padding: 5px;
+			">
+			
+				<h2>Teacher/School Info</h2>
+				<p>Teacher: Rob Korobkin</p>
+				<p>School: Baxter Academy</p>
+				<p>Address: 54 York Street, Portland ME</p>
+				<p>Phone: 207-123-4567</p>
+				<p>E-mail: rob.korokbin@baxter-academy.org</p>
+				
+			</div>
 		
 	</body>
  </html>
+ <!---
+ 
+ --->
