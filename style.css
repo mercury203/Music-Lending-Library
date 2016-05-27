@@ -1,6 +1,6 @@
 body {
 				 background-color: #ffffff;
-				margin: 10px;
+				margin: 0px;
 				padding: 0px;
 				font-family: 'Nunito', sans-serif;
 			 }
@@ -193,3 +193,7 @@ table {
 			td:hover {
 				color: blue;
 			}
+#superwrap {
+	width: 1000px;
+	text-align: center;
+}
