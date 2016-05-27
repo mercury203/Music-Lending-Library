@@ -1,16 +1,15 @@
 body {
 				 background-color: #ffffff;
 				margin: 10px;
-				font-family: 'Nunito', sans-serif;
 				padding: 0px;
+				font-family: 'Nunito', sans-serif;
 			 }
 h1 {
 	text-align: center;
-	font-family: 'Nunito', sans-serif;
 	margin: 10px;
 }
 h2 {
-				 font-family: 'Nunito', sans-serif;
+
 				 text-align:left;
 			 }
 img {
@@ -131,4 +130,65 @@ fieldset {
 				width: 40%
 				float: left;
 				color: #000000
+			}
+#E-2 {
+			width: 40%;
+			height: 250px;
+			float: left;
+			border: 1px solid black;
+			}
+			#E-3 {
+			width: 40%;
+			height: 250px;
+			float: left;
+			}
+ul.top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+li.top {
+    float: left;
+}
+
+li.top a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.top a:hover {
+    background-color: #fff;
+	color: #000;
+}
+table {
+				font-weight: normal;
+		        width: 89%;
+				float: left;
+				border: 1px solid black;
+			}
+			table, th, td {
+				border-collapse: collapse;
+			}
+			th, td {
+				padding: 5px 15px;
+				text-align: left;
+			}
+			table#t01 tr:nth-child(even) {
+				background-color: #eee;
+			}
+			table#t01 tr:nth-child(odd) {
+			   background-color:#fff;
+			}
+			table#t01 th	{
+				background-color: black;
+				color: white;
+				border: 1px solid black;
+			td:hover {
+				color: blue;
 			}

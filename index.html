@@ -177,6 +177,101 @@
 			
     </div>	
 </div>
+
+<div ng-if="View == 'E'">
+<ul class="top">
+		<li class="top"><a href="hello">Home</a></li>
+		<li class="top"><a href="hello">Edit Account</a></li>
+		<li class="top"><a href="hello">My Instruments</a></li>
+	</ul>
+		<h1>Search</h1>
+		
+		<div class="E-1">
+			<h2 style="display:inline;">Search by:</h2> 
+			<select name="thing">
+				<option value="inst">Instrument</option>
+				<option value="inst">Saxaphone</option>
+				<option value="inst">Oboe</option>
+				<option value="inst">Drum</option>
+			</select>
+			<select name="thing">
+				<option value="inst">School</option>
+				<option value="inst">Baxter</option>
+				<option value="inst">RSU 13</option>
+				<option value="inst">MSAD 75</option>
+			</select>
+			<select name="thing">
+				<option value="inst">Condition</option>
+				<option value="inst">Bad</option>
+				<option value="inst">Good</option>
+				<option value="inst">Great</option>
+			</select>
+			<button type="button">Go!</button>
+		</div>
+		<br />
+		<table id="t01">
+			<tr>
+				<th>Instrument</th>
+				<th>School</th>
+				<th>Condition</th>
+			</tr>
+			<tr>
+				<td class="hover">Saxaphone</td>
+				<td class="hover">Baxter</td>
+				<td class="hover">Poor</td>
+			</tr>
+				<td class="hover">Oboe</td>
+				<td class="hover">HCA</td>
+				<td class="hover">OK</td>
+			</tr>
+			</tr>
+				<td class="hover">Drum</td>
+				<td class="hover">MSAD 75</td>
+				<td class="hover">Good</td>
+			</tr>
+			</tr>
+				<td class="hover">Guitar</td>
+				<td class="hover">RSU 23</td>
+				<td class="hover">Bad</td>
+			</tr>
+		</table>
+		<br />
+			<div class="E-2" style="
+			width: 40%;
+			height: 250px;
+			float: left;
+			border: 1px solid black; 
+			margin-right:50px;
+			margin-bottom:50px;
+			margin-top:50px;
+			padding: 5px;
+			">
+			
+				<h2>Instrument Info</h2>
+				<p>Instrument: Saxaphone</p>
+				<p>Condition: Trashed</p>
+				<p>Location: Baxter</p>
+				<p>Notes: None</p>
+			
+			</div>
+			<div class="E-3" style="width: 40%;
+			height: 250px;
+			float: left;
+			border: 1px solid black; 
+			margin:50px;
+			padding: 5px;
+			">
+			
+				<h2>Teacher/School Info</h2>
+				<p>Teacher: Rob Korobkin</p>
+				<p>School: Baxter Academy</p>
+				<p>Address: 54 York Street, Portland ME</p>
+				<p>Phone: 207-123-4567</p>
+				<p>E-mail: rob.korokbin@baxter-academy.org</p>
+				
+			</div>
+</div>
+
 </body>
 </html>
 
