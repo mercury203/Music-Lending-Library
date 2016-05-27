@@ -39,11 +39,11 @@
 				
 
 				<div id="column2">
-					<a href="www.placeholder.com">My instruments</a>
+					<a ng-click="loadView('C')">My instruments</a>
 					<br />
-					<a href="www.placeholder.com">Sign Up</a>
+					<a ng-click="loadView('B')">Sign Up</a>
 					<br />
-					<a href="www.placeholder.com">Browse</a>
+					<a ng-click="loadView('E')">Search</a>
 					</b>
 				</div>
 			</div>
@@ -100,15 +100,12 @@
 		</div>
 		
 		<div ng-if="View == 'C'">
-			<div class="sidebar">
-				<a href="www.placeholder.com">Browse</a>
-				</br>
-				<a href="www.placeholder.com">Home</a>
-				</br>
-				<a href="www.placeholder.com">Log Out</a>
-				</br>
-			</div>
-			
+			<ul class="top">
+				<li class="top"><a ng-click="loadView('A')">Home</a></li>
+				<li class="top"><a ng-click="loadView('C')">My Instruments</a></li>
+				<li class="top"><a ng-click="loadView('D')">Add Instrument</a></li>
+				<li class="top"><a ng-click="loadView('E')">Search</a></li>
+			</ul>
 			<div class="mainContent">
 				<h1>My Instruments</h1>
 				<table id="t01">
@@ -141,6 +138,12 @@
 		</div>
 
 		<div ng-if="View == 'D'">
+		<ul class="top">
+				<li class="top"><a ng-click="loadView('A')">Home</a></li>
+				<li class="top"><a ng-click="loadView('C')">My Instruments</a></li>
+				<li class="top"><a ng-click="loadView('D')">Add Instrument</a></li>
+				<li class="top"><a ng-click="loadView('E')">Search</a></li>
+			</ul>
 			<div id="header">
 				<h1>Add instrument</h1>
 			</div>
@@ -183,9 +186,10 @@
 
 		<div ng-if="View == 'E'">
 			<ul class="top">
-				<li class="top"><a href="hello">Home</a></li>
-				<li class="top"><a href="hello">Edit Account</a></li>
-				<li class="top"><a href="hello">My Instruments</a></li>
+				<li class="top"><a ng-click="loadView('A')">Home</a></li>
+				<li class="top"><a ng-click="loadView('C')">My Instruments</a></li>
+				<li class="top"><a ng-click="loadView('D')">Add Instrument</a></li>
+				<li class="top"><a ng-click="loadView('E')">Search</a></li>
 			</ul>
 			<h1>Search</h1>
 		

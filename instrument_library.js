@@ -6,6 +6,10 @@ app.controller('instrumentLibraryCtrl', ['$scope', '$http',
 		console.log('i am running')
 
 		$scope.View = "A";
+		
+		$scope.loadView = function(viewName){
+			$scope.View = viewName;
+		}
 
 	}
 ]);
